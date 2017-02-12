@@ -1,0 +1,645 @@
+contact_id,rep_name,rep_state,rep_party,rep_pos
+VA-A.DonaldMcEachin,A.DonaldMcEachin,VA,,House
+GA-A.DrewFergusonIV,A.DrewFergusonIV,GA,,House
+CA-AdamB.Schiff,Adam Schiff,CA,D,House
+#NAME?,Adam Schiff,CA,D,House
+WA-AdamSmith,Adam Smith,WA,D,House
+IL-AdamKinzinger,AdamKinzinger,IL,,House
+NY-AdrianoEspaillat,Adriano D. Espaillat,NY,D,House
+NE-AdrianSmith,AdrianSmith,NE,,House
+MN-AlFranken,Al Franken,MN,D,Senate
+#NAME?,Al Franken,MN,D,Senate
+TX-AlGreen,Al Green,TX,,House
+FL-AlLawsonJr.,Al Lawson Jr,FL,,House
+CA-AlanS.Lowenthal,AlanS.Lowenthal,CA,,House
+NJ-AlbioSires,AlbioSires,NJ,,House
+WV-AlexanderX.Mooney,AlexanderX.Mooney,WV,,House
+NC-AlmaS.Adams,AlmaS.Adams,NC,,House
+CA-AmiBera,AmiBera,CA,,House
+MN-AmyKlobuchar,Amy Klobuchar,MN,D,Senate
+#NAME?,Amy Klobuchar,MN,D,Senate
+IN-AndreCarson,AndreCarson,IN,,House
+KY-AndyBarr,Andy Barr,KY,R,House
+AZ-AndyBiggs,Andy Biggs,AZ,,House
+MD-AndyHarris,Andy Harris,MD,,House
+#NAME?,Andy Harris,MD,,House
+ME-AngusS.KingJr.,Angus King,ME,I,Senate
+NH-AnnM.Kuster,Ann McLane Kuster,NH,D,House
+CA-AnnaG.Eshoo,Anna Eshoo,CA,D,House
+MO-AnnWagner,AnnWagner,MO,,House
+MD-AnthonyG.Brown,AnthonyG.Brown,MD,,House
+GA-AustinScott,AustinScott,GA,,House
+CA-BarbaraLee,Barbara Lee,CA,D,House
+VA-BarbaraComstock,BarbaraComstock,VA,,House
+GA-BarryLoudermilk,BarryLoudermilk,GA,,House
+MD-BenjaminL.Cardin,Ben Cardin,MD,D,Senate
+#NAME?,Ben Cardin,MD,D,Senate
+NM-BenRayLujan,Ben Lujan,NM,D,House
+NE-BenSasse,Ben Sasse,NE,R,Senate
+#NAME?,Ben Sasse,NE,R,Senate
+MS-BennieG.Thompson,BennieG.Thompson,MS,,House
+VT-BernardSanders,Bernie Sanders,VT,D,Senate
+TX-BetoO'Rourke,BetoO'Rourke,TX,,House
+MN-BettyMcCollum,Betty McCollum,MN,DFL,House
+LA-BillCassidy,Bill Cassidy,LA,R,Senate
+#NAME?,Bill Cassidy,LA,R,Senate
+MI-BillHuizenga,Bill Huizenga,MI,,House
+#NAME?,Bill Huizenga,MI,,House
+FL-BillNelson,Bill Nelson,FL,D,Senate
+#NAME?,Bill Nelson,FL,D,Senate
+TX-BillFlores,BillFlores,TX,,House
+IL-BillFoster,BillFoster,IL,,House
+OH-BillJohnson,BillJohnson,OH,,House
+NJ-BillPascrellJr.,BillPascrellJr.,NJ,,House
+PA-BillShuster,BillShuster,PA,,House
+MO-BillyLong,BillyLong,MO,,House
+MO-BlaineLuetkemeyer,BlaineLuetkemeyer,MO,,House
+TX-BlakeFarenthold,BlakeFarenthold,TX,,House
+PA-RobertA.Brady,Bob Brady,PA,D,House
+PA-RobertP.CaseyJr.,Bob Casey Jr.,PA,D,Senate
+#NAME?,Bob Casey Jr.,PA,D,Senate
+TN-BobCorker,Bob Corker,TN,R,Senate
+#NAME?,Bob Corker,TN,R,Senate
+#NAME?,Bob Menendez,NJ,D,Senate
+NJ-RobertMenendez,Bob Menendez,NJ,D,Senate
+IL-BobbyL.Rush,BobbyL.Rush,IL,,House
+OH-BobGibbs,BobGibbs,OH,,House
+VA-BobGoodlatte,BobGoodlatte,VA,,House
+NJ-BonnieWatsonColeman,BonnieWatsonColeman,NJ,,House
+CA-BradSherman,Brad Sherman,CA,D,House
+OH-BradR.Wenstrup,Brad Wenstrup,OH,R,House
+AL-BradleyByrne,BradleyByrne,AL,,House
+IL-BradleyScottSchneider,BradleyScottSchneider,IL,,House
+MI-BrendaL.Lawrence,BrendaL.Lawrence,MI,,House
+PA-BrendanF.Boyle,BrendanF.Boyle,PA,,House
+KY-BrettGuthrie,BrettGuthrie,KY,,House
+PA-BrianK.Fitzpatrick,Brian Fitzpatrick,PA,R,House
+HI-BrianSchatz,Brian Schatz,HI,D,Senate
+TX-BrianBabin,BrianBabin,TX,,House
+NY-BrianHiggins,BrianHiggins,NY,,House
+ME-BrucePoliquin,BrucePoliquin,ME,,House
+AR-BruceWesterman,BruceWesterman,AR,,House
+MD-C.A.DutchRuppersberger,C.A.DutchRuppersberger,MD,,House
+NH-CarolShea-Porter,Carol Shea-Porter,NH,D,House
+NY-CarolynB.Maloney,Carolyn Maloney,NY,D,House
+NV-CatherineCortezMasto,Catherine Cortez Masto,NV,D,Senate
+WA-CathyMcMorrisRodgers,Cathy McMorris Rodgers,WA,R,House
+#NAME?,Cathy McMorris Rodgers,WA,R,House
+LA-CedricL.Richmond,CedricL.Richmond,LA,,House
+PA-CharlesW.Dent,CharlesW.Dent,PA,,House
+ME-ChelliePingree,ChelliePingree,ME,,House
+IL-CheriBustos,CheriBustos,IL,,House
+DE-ChristopherA.Coons,Chris Coons,DE,D,Senate
+CT-ChristopherMurphy,Chris Murphy,CT,D,Senate
+UT-ChrisStewart,Chris Stewart,UT,R,House
+MD-ChrisVanHollen,Chris Van Hollen,MD,D,Senate
+NY-ChrisCollins,ChrisCollins,NY,,House
+NJ-ChristopherH.Smith,ChristopherH.Smith,NJ,,House
+"TN-CharlesJ.\Chuck\""Fleischmann""",Chuck Fleischmann,TN,,House
+"-CharlesJ.\Chuck\""Fleischmann""",Chuck Fleischmann,TN,R,House
+IA-ChuckGrassley,Chuck Grassley,IA,R,Senate
+#NAME?,Chuck Grassley,IA,R,Senate
+#NAME?,Chuck Schumer,NY,D,House
+NY-CharlesE.Schumer,Chuck Schumer,NY,D,Senate
+MO-ClaireMcCaskill,Claire McCaskill,MO,D,Senate
+#NAME?,Claire McCaskill,MO,D,Senate
+NY-ClaudiaTenney,ClaudiaTenney,NY,,House
+LA-ClayHiggins,ClayHiggins,LA,,House
+HI-ColleenHanabusa,ColleenHanabusa,HI,,House
+MN-CollinC.Peterson,CollinC.Peterson,MN,,House
+NJ-CoryA.Booker,Cory Booker,NJ,D,Senate
+#NAME?,Cory Booker,NJ,D,Senate
+CO-CoryGardner,Cory Gardner,CO,R,Senate
+#NAME?,Cory Gardner,CO,,Senate
+AK-DanielSullivan,Dan Sullivan,AK,R,Senate
+AK-DanSullivan,Dan Sullivan,AK,R,Senate
+CA-DanaRohrabacher,DanaRohrabacher,CA,,House
+IL-DanielLipinski,DanielLipinski,IL,,House
+NY-DanielM.DonovanJr.,DanielM.DonovanJr.,NY,,House
+MI-DanielT.Kildee,DanielT.Kildee,MI,,House
+WA-DanNewhouse,DanNewhouse,WA,,House
+IL-DannyK.Davis,Danny K. Davis,IL,D,House
+IL-DarinLaHood,DarinLaHood,IL,,House
+CA-DarrellE.Issa,Darrell Issa,CA,R,House
+FL-DarrenSoto,DarrenSoto,FL,,House
+VA-DaveBrat,DaveBrat,VA,,House
+IA-DavidLoebsack,David Loebsack,IA,D,House
+GA-DavidPerdue,David Perdue,GA,R,Senate
+#NAME?,David Perdue,GA,R,Senate
+WA-DavidG.Reichert,David Reichert,WA,,House
+#NAME?,David Reichert,WA,,House
+TN-DavidP.Roe,David Roe,TN,,House
+#NAME?,David Roe,TN,,House
+NC-DavidRouzer,David Rouzer,NC,,House
+MI-DavidA.Trott,DavidA.Trott,MI,,House
+WV-DavidB.McKinley,DavidB.McKinley,WV,,House
+NC-DavidE.Price,DavidE.Price,NC,,House
+CA-DavidG.Valadao,DavidG.Valadao,CA,,House
+TN-DavidKustoff,DavidKustoff,TN,,House
+RI-DavidN.Cicilline,DavidN.Cicilline,RI,,House
+OH-DavidP.Joyce,DavidP.Joyce,OH,,House
+AZ-DavidSchweikert,DavidSchweikert,AZ,,House
+GA-DavidScott,DavidScott,GA,,House
+IA-DavidYoung,DavidYoung,IA,,House
+NV-DeanHeller,Dean Heller,NV,R,Senate
+#NAME?,Dean Heller,NV,R,Senate
+NE-DebFischer,Deb Fischer,NE,R,Senate
+#NAME?,Deb Fischer,NE,R,Senate
+MI-DebbieDingell,Debbie Dingell,MI,D,House
+MI-DebbieStabenow,Debbie Stabenow,MI,D,Senate
+#NAME?,Debbie Stabenow,MI,D,Senate
+#NAME?,DebbieDingell,MI,D,House
+FL-DebbieWassermanSchultz,DebbieWassermanSchultz,FL,,House
+FL-DennisA.Ross,DennisA.Ross,FL,,House
+WA-DennyHeck,DennyHeck,WA,,House
+WA-DerekKilmer,Derek Kilmer,WA,D,House
+CA-DevinNunes,DevinNunes,CA,,House
+CO-DianaDeGette,Diana DeGette,CO,D,House
+TN-DianeBlack,DianeBlack,TN,,House
+CA-DianneFeinstein,Dianne Feinstein,CA,D,Senate
+#NAME?,Dianne Feinstein,CA,D,House
+IL-RichardJ.Durbin,Dick Durbin,IL,D,Senate
+#NAME?,Dick Durbin,IL,D,Senate
+NV-DinaTitus,DinaTitus,NV,,House
+NJ-DonaldM.PayneJr.,Donald Payne Jr.,NJ,D,House
+NJ-DonaldNorcross,DonaldNorcross,NJ,,House
+VA-DonaldS.BeyerJr.,DonaldS.BeyerJr.,VA,,House
+NE-DonBacon,DonBacon,NE,,House
+AK-DonYoung,DonYoung,AK,,House
+CA-DorisO.Matsui,DorisO.Matsui,CA,,House
+CA-DougLaMalfa,Doug LaMalfa,CA,R,House
+CO-DougLamborn,Doug Lamborn,CO,R,House
+GA-DougCollins,DougCollins,GA,,House
+CA-DuncanHunter,DuncanHunter,CA,,House
+PA-DwightEvans,Dwight Evans,PA,D,House
+OR-EarlBlumenauer,Earl Blumenauer,OR,D,House
+#NAME?,Earl Blumenauer,OR,D,House
+"GA-EarlL.\Buddy\""Carter""","EarlL.\Buddy\""Carter""",GA,,House
+MA-EdwardJ.Markey,Ed Markey,MA,D,Senate
+#NAME?,Ed Markey,MA,D,Senate
+CO-EdPerlmutter,Ed Perlmutter,CO,D,House
+#NAME?,Ed Perlmutter,CO,D,House
+TX-EddieBerniceJohnson,EddieBerniceJohnson,TX,,House
+CA-EdwardR.Royce,EdwardR.Royce,CA,,House
+MD-ElijahE.Cummings,ElijahE.Cummings,MD,,House
+NY-EliotL.Engel,EliotL.Engel,NY,,House
+NY-EliseM.Stefanik,EliseM.Stefanik,NY,,House
+MA-ElizabethWarren,Elizabeth Warren,MA,D,Senate
+#NAME?,Elizabeth Warren,MA,D,Senate
+CT-ElizabethH.Esty,ElizabethH.Esty,CT,,House
+MO-EmanuelCleaver,EmanuelCleaver,MO,,House
+"AR-EricA.\Rick\""Crawford""","EricA.\Rick\""Crawford""",AR,,House
+CA-EricSwalwell,EricSwalwell,CA,,House
+MN-ErikPaulsen,Erik Paulsen,MN,R,House
+#NAME?,Erik Paulsen,MN,R,House
+WV-EvanH.Jenkins,EvanH.Jenkins,WV,,House
+WI-F.JamesSensenbrennerJr.,F.JamesSensenbrennerJr.,WI,,House
+TX-FilemonVela,FilemonVela,TX,,House
+NJ-FrankA.LoBiondo,FrankA.LoBiondo,NJ,,House
+OK-FrankD.Lucas,FrankD.Lucas,OK,,House
+NJ-FrankPalloneJr.,FrankPalloneJr.,NJ,,House
+MI-FredUpton,Fred Upton,MI,R,House
+FL-FredericaS.Wilson,FredericaS.Wilson,FL,,House
+NC-G.K.Butterfield,G.K.Butterfield,NC,,House
+LA-GarretGraves,Garret Graves,LA,,House
+#NAME?,Garret Graves,LA,,House
+MI-GaryC.Peters,Gary Peters,MI,D,Senate
+#NAME?,Gary Peters,MI,D,Senate
+AL-GaryJ.Palmer,GaryJ.Palmer,AL,,House
+TX-GeneGreen,GeneGreen,TX,,House
+NC-GeorgeHolding,GeorgeHolding,NC,,House
+VA-GeraldE.Connolly,GeraldE.Connolly,VA,,House
+WI-GlennGrothman,GlennGrothman,WI,,House
+PA-GlennThompson,GlennThompson,PA,,House
+CA-GraceF.Napolitano,GraceF.Napolitano,CA,,House
+NY-GraceMeng,GraceMeng,NY,,House
+OR-GregWalden,Greg Walden,OR,R,House
+MS-GreggHarper,GreggHarper,MS,,House
+NY-GregoryW.Meeks,GregoryW.Meeks,NY,,House
+FL-GusM.Bilirakis,GusM.Bilirakis,FL,,House
+WI-GwenMoore,GwenMoore,WI,,House
+VA-H.MorganGriffith,H.MorganGriffith,VA,,House
+NY-HakeemS.Jeffries,HakeemS.Jeffries,NY,,House
+KY-HaroldRogers,HaroldRogers,KY,,House
+ND-HeidiHeitkamp,Heidi Heitcamp,ND,D,Senate
+"GA-HenryC.\Hank\""JohnsonJr.""","HenryC.\Hank\""JohnsonJr.""",GA,,House
+TX-HenryCuellar,HenryCuellar,TX,,House
+FL-IleanaRos-Lehtinen,IleanaRos-Lehtinen,FL,,House
+AR-J.FrenchHill,J.FrenchHill,AR,,House
+CA-J.LuisCorrea,J.LuisCorrea,CA,,House
+MI-JackBergman,Jack Bergman,MI,R,House
+RI-JackReed,Jack Reed,RI,D,Senate
+#NAME?,Jack Reed,RI,D,Senate
+CA-JackieSpeier,Jackie Speier,CA,D,House
+#NAME?,Jackie Speier,CA,D,House
+IN-JackieWalorski,JackieWalorski,IN,,House
+NV-JackyRosen,JackyRosen,NV,,House
+WA-JaimeHerreraBeutler,Jaime Herrera Beutler,WA,R,House
+OK-JamesLankford,James Lankford,OK,R,Senate
+OH-JamesB.Renacci,JamesB.Renacci,OH,,House
+KY-JamesComer,JamesComer,KY,,House
+SC-JamesE.Clyburn,JamesE.Clyburn,SC,,House
+RI-JamesR.Langevin,JamesR.Langevin,RI,,House
+#NAME?,JamesR.Langevin,RI,,House
+MD-JamieRaskin,Jamie Raskin,MD,D,House
+IL-JaniceD.Schakowsky,JaniceD.Schakowsky,IL,,House
+CA-JaredHuffman,Jared Huffman,CA,D,House
+#NAME?,Jared Huffman,CA,D,House
+CO-JaredPolis,Jared Polis,CO,D,House
+#NAME?,Jared Polis,CO,D,House
+UT-JasonChaffetz,JasonChaffetz,UT,,House
+MN-JasonLewis,JasonLewis,MN,,House
+MO-JasonSmith,JasonSmith,MO,,House
+NH-JeanneShaheen,Jeanne Shaheen,NH,D,Senate
+TX-JebHensarling,JebHensarling,TX,,House
+AZ-JeffFlake,Jeff Flake,AZ,R,Senate
+#NAME?,Jeff Flake,AZ,R,Senate
+OR-JeffMerkley,Jeff Merkley,OR,D,Senate
+#NAME?,Jeff Merkley,OR,D,Senate
+AL-JeffSessions,Jeff Sessions,AL,R,Senate
+CA-JeffDenham,JeffDenham,CA,,House
+SC-JeffDuncan,JeffDuncan,SC,,House
+NE-JeffFortenberry,JeffFortenberry,NE,,House
+NY-JerroldNadler,Jerrold Nadler,NY,D,House
+#NAME?,Jerrold Nadler,NY,D,House
+KS-JerryMoran,Jerry Moran,KS,R,Senate
+#NAME?,Jerry Moran,KS,R,Senate
+CA-JerryMcNerney,JerryMcNerney,CA,,House
+TN-JimCooper,Jim Cooper,TN,D,House
+CT-JamesA.Himes,Jim Himes,CT,D,House
+OK-JamesM.Inhofe,Jim Inhofe,OK,R,Senate
+MA-JamesP.McGovern,Jim McGovern,MA,D,House
+ID-JamesE.Risch,Jim Risch,ID,R,Senate
+#NAME?,Jim Risch,ID,R,Senate
+IN-JimBanks,JimBanks,IN,,House
+OK-JimBridenstine,JimBridenstine,OK,,House
+CA-JimCosta,JimCosta,CA,,House
+OH-JimJordan,JimJordan,OH,,House
+CA-JimmyPanetta,Jimmy Panetta,CA,D,House
+TX-JoaquinCastro,JoaquinCastro,TX,,House
+TX-JodeyC.Arrington,JodeyC.Arrington,TX,,House
+GA-JodyB.Hice,JodyB.Hice,GA,,House
+IN-JoeDonnelly,Joe Donnelly,IN,D,Senate
+#NAME?,Joe Donnelly,IN,D,Senate
+WV-JoeManchinIII,Joe Manchin,WV,D,Senate
+TX-JoeBarton,JoeBarton,TX,,House
+CT-JoeCourtney,JoeCourtney,CT,,House
+SC-JoeWilson,JoeWilson,SC,,House
+WY-JohnBarrasso,John Barrasso,WY,R,Senate
+#NAME?,John Barrasso,WY,R,Senate
+AR-JohnBoozman,John Boozman,AR,R,Senate
+TX-JohnCornyn,John Cornyn,TX,R,Senate
+#NAME?,John Cornyn,TX,R,Senate
+NY-JohnJ.Faso,John Faso,NY,R,House
+LA-JohnKennedy,John Kennedy,LA,R,Senate
+#NAME?,John Kennedy,LA,R,Senate
+GA-JohnLewis,John Lewis,GA,D,House
+AZ-JohnMcCain,John McCain,AZ,R,Senate
+#NAME?,John McCain,AZ,R,Senate
+KY-JohnA.Yarmuth,John Yarmouth,KY,D,House
+TX-JohnAbneyCulberson,JohnAbneyCulberson,TX,,House
+CT-JohnB.Larson,JohnB.Larson,CT,,House
+MI-JohnConyersJr.,JohnConyersJr.,MI,,House
+CA-JohnGaramendi,JohnGaramendi,CA,,House
+FL-JohnH.Rutherford,JohnH.Rutherford,FL,,House
+ND-JohnHoeven,John Hoeven,ND,R,Senate
+TN-JohnJ.DuncanJr.,JohnJ.DuncanJr.,TN,,House
+MD-JohnK.Delaney,JohnK.Delaney,MD,,House
+NY-JohnKatko,JohnKatko,NY,,House
+GA-JohnnyIsakson,Johnny Isakson,GA,R,Senate
+#NAME?,Johnny Isakson,GA,R,Senate
+MD-JohnP.Sarbanes,JohnP.Sarbanes,MD,,House
+TX-JohnR.Carter,JohnR.Carter,TX,,House
+MI-JohnR.Moolenaar,JohnR.Moolenaar,MI,,House
+TX-JohnRatcliffe,JohnRatcliffe,TX,,House
+IL-JohnShimkus,JohnShimkus,IL,,House
+SD-JohnThune,JohnThune,SD,,House
+MT-JonTester,Jon Tester,MT,D,Senate
+#NAME?,Jon Tester,MT,D,Senate
+IA-JoniErnst,Joni Ernst,IA,R,Senate
+#NAME?,Joni Ernst,IA,R,Senate
+NY-JoseE.Serrano,JoseE.Serrano,NY,,House
+NY-JosephCrowley,JosephCrowley,NY,,House
+MA-JosephP.KennedyIII,JosephP.KennedyIII,MA,,House
+NJ-JoshGottheimer,JoshGottheimer,NJ,,House
+OH-JoyceBeatty,JoyceBeatty,OH,,House
+CA-JuanVargas,JuanVargas,CA,,House
+CA-JudyChu,Judy Chu,CA,D,House
+CA-JuliaBrownley,JuliaBrownley,CA,,House
+MI-JustinAmash,JustinAmash,MI,,House
+TX-K.MichaelConaway,K.MichaelConaway,TX,,House
+CA-KamalaD.Harris,Kamala Harris,CA,D,Senate
+CA-KarenBass,Karen Bass,CA,D,House
+#NAME?,Karen Bass,CA,D,House
+MA-KatherineM.Clark,Katherine Clark,MA,D,House
+NY-KathleenM.Rice,KathleenM.Rice,NY,,House
+FL-KathyCastor,KathyCastor,FL,,House
+TX-KayGranger,KayGranger,TX,,House
+MN-KeithEllison,Keith Ellison,MN,D,House
+PA-KeithJ.Rothfus,KeithJ.Rothfus,PA,,House
+CO-KenBuck,Ken Buck,CO,R,House
+CA-KenCalvert,KenCalvert,CA,,House
+TX-KennyMarchant,KennyMarchant,TX,,House
+TX-KevinBrady,KevinBrady,TX,,House
+ND-KevinCramer,KevinCramer,ND,,House
+CA-KevinMcCarthy,KevinMcCarthy,CA,,House
+KS-KevinYoder,KevinYoder,KS,R,House
+NY-KirstenE.Gillibrand,Kirsten Gillibrand,NY,D,Senate
+#NAME?,Kirsten Gillibrand,NY,D,Senate
+SD-KristiL.Noem,KristiL.Noem,SD,,House
+OR-KurtSchrader,KurtSchrader,OR,,House
+AZ-KyrstenSinema,KyrstenSinema,AZ,,House
+MO-Wm.LacyClay,Lacy Clay,MO,D,House
+TN-LamarAlexander,Lamar Alexander,TN,R,Senate
+#NAME?,Lamar Alexander,TN,R,Senate
+TX-LamarSmith,LamarSmith,TX,,House
+IN-LarryBucshon,LarryBucshon,IN,,House
+NY-LeeM.Zeldin,Lee Zeldin,NY,R,House
+NJ-LeonardLance,Leonard Lance,NJ,R,House
+#NAME?,Leonard Lance,NJ,R,House
+CA-LindaT.Sanchez,LindaT.Sanchez,CA,,House
+SC-LindseyGraham,Lindsey Graham,SC,R,Senate
+AK-LisaMurkowski,Lisa Murkowski,AK,R,Senate
+DE-LisaBluntRochester,LisaBluntRochester,DE,,House
+WY-LizCheney,LizCheney,WY,,House
+TX-LloydDoggett,LloydDoggett,TX,,House
+PA-LloydSmucker,LloydSmucker,PA,,House
+FL-LoisFrankel,LoisFrankel,FL,,House
+PA-LouBarletta,LouBarletta,PA,,House
+TX-LouieGohmert,LouieGohmert,TX,,House
+NY-LouiseMcIntoshSlaughter,Louise Slaughter,NY,D,House
+CA-LucilleRoybal-Allard,LucilleRoybal-Allard,CA,,House
+IL-LuisV.Gutierrez,LuisV.Gutierrez,IL,,House
+IN-LukeMesser,LukeMesser,IN,,House
+KS-LynnJenkins,LynnJenkins,KS,,House
+TX-MacThornberry,MacThornberry,TX,,House
+NH-MargaretWoodHassan,Maggie Hassan,NH,D,Senate
+TX-MarcA.Veasey,MarcA.Veasey,TX,,House
+OH-MarciaL.Fudge,Marcia Fudge,OH,D,House
+FL-MarcoRubio,Marco Rubio,FL,R,Senate
+#NAME?,Marco Rubio,FL,R,Senate
+OH-MarcyKaptur,MarcyKaptur,OH,,House
+WA-MariaCantwell,Maria Cantwell,WA,D,Senate
+#NAME?,Maria Cantwell,WA,D,Senate
+FL-MarioDiaz-Balart,MarioDiaz-Balart,FL,,House
+CA-MarkDeSaulnier,Mark DeSaulnier,CA,D,House
+WI-MarkPocan,Mark Pocan,WI,D,House
+#NAME?,Mark Pocan,WI,D,House
+VA-MarkR.Warner,Mark Warner,VA,D,Senate
+#NAME?,Mark Warner,VA,D,Senate
+NV-MarkE.Amodei,MarkE.Amodei,NV,,House
+#NAME?,MarkE.Amodei,NV,,House
+NC-MarkMeadows,MarkMeadows,NC,,House
+SC-MarkSanford,MarkSanford,SC,,House
+CA-MarkTakano,MarkTakano,CA,,House
+NC-MarkWalker,MarkWalker,NC,,House
+OK-MarkwayneMullin,MarkwayneMullin,OK,,House
+TN-MarshaBlackburn,MarshaBlackburn,TN,,House
+AZ-MarthaMcSally,Martha McSally,AZ,R,House
+AL-MarthaRoby,MarthaRoby,AL,,House
+NM-MartinHeinrich,Martin Heinrich,NM,D,Senate
+#NAME?,Martin Heinrich,NM,D,Senate
+PA-MattCartwright,MattCartwright,PA,,House
+FL-MattGaetz,MattGaetz,FL,,House
+CA-MaxineWaters,MaxineWaters,CA,,House
+HI-MazieK.Hirono,Mazie Hirono,HI,D,Senate
+UT-MiaB.Love,MiaB.Love,UT,,House
+CO-MichaelF.Bennet,Michael Bennet,CO,D,Senate
+#NAME?,Michael Bennet,CO,D,Senate
+PA-MichaelF.Doyle,Michael F. Doyle,PA,D,House
+#NAME?,Michael F. Doyle,PA,D,House
+TX-MichaelC.Burgess,MichaelC.Burgess,TX,,House
+ID-MichaelK.Simpson,MichaelK.Simpson,ID,,House
+TX-MichaelT.McCaul,MichaelT.McCaul,TX,,House
+NM-MichelleLujanGrisham,MichelleLujanGrisham,NM,,House
+SC-MickMulvaney,MickMulvaney,SC,,House
+MI-MikeBishop,Mike Bishop,MI,R,House
+MA-MichaelE.Capuano,Mike Capuano,MA,D,House
+CO-MikeCoffman,Mike Coffman,CO,,House
+#NAME?,Mike Coffman,CO,,House
+ID-MikeCrapo,Mike Crapo,ID,R,Senate
+#NAME?,Mike Crapo,ID,R,Senate
+#NAME?,Mike Enzi,WY,R,Senate
+WY-MichaelB.Enzi,Mike Enzi,WY,R,Senate
+UT-MikeLee,Mike Lee,UT,R,Senate
+OH-MichaelR.Turner,Mike Turner,OH,R,House
+IL-MikeBost,MikeBost,IL,,House
+WI-MikeGallagher,MikeGallagher,WI,,House
+LA-MikeJohnson,MikeJohnson,LA,,House
+PA-MikeKelly,MikeKelly,PA,,House
+KS-MikePompeo,MikePompeo,KS,,House
+IL-MikeQuigley,MikeQuigley,IL,,House
+AL-MikeRogers,MikeRogers,AL,,House
+SD-MikeRounds,MikeRounds,SD,,House
+CA-MikeThompson,MikeThompson,CA,,House
+CA-MimiWalters,MimiWalters,CA,,House
+KY-MitchMcConnell,Mitch McConnell,KY,R,Senate
+#NAME?,Mitch McConnell,KY,R,Senate
+AL-MoBrooks,MoBrooks,AL,,House
+CA-NancyPelosi,Nancy Pelosi,CA,D,House
+#NAME?,Nancy Pelosi,CA,D,House
+FL-NealP.Dunn,NealP.Dunn,FL,,House
+MA-NikiTsongas,NikiTsongas,MA,,House
+NY-NitaM.Lowey,Nita Lowey,NY,D,House
+#NAME?,Nita Lowey,NY,D,House
+CA-NormaJ.Torres,NormaJ.Torres,CA,,House
+NY-NydiaM.Velazquez,NydiaM.Velazquez,NY,,House
+UT-OrrinG.Hatch,Orrin Hatch,UT,R,Senate
+KS-PatRoberts,Pat Roberts,KS,R,Senate
+#NAME?,Pat Roberts,KS,R,Senate
+PA-PatrickJ.Toomey,Pat Toomey,PA,R,Senate
+#NAME?,Pat Toomey,PA,R,Senate
+VT-PatrickJ.Leahy,Patrick Leahy,VT,D,Senate
+OH-PatrickJ.Tiberi,PatrickJ.Tiberi,OH,,House
+PA-PatrickMeehan,PatrickMeehan,PA,,House
+NC-PatrickT.McHenry,PatrickT.McHenry,NC,,House
+WA-PattyMurray,Patty Murray,WA,D,Senate
+#NAME?,Patty Murray,WA,D,Senate
+AZ-PaulA.Gosar,PaulA.Gosar,AZ,,House
+CA-PaulCook,PaulCook,CA,,House
+WI-PaulD.Ryan,PaulD.Ryan,WI,,House
+MI-PaulMitchell,PaulMitchell,MI,,House
+NY-PaulTonko,PaulTonko,NY,,House
+CA-PeteAguilar,PeteAguilar,CA,,House
+TX-PeteOlson,PeteOlson,TX,,House
+OR-PeterA.DeFazio,Peter DeFazio,OR,D,House
+VT-PeterWelch,Peter Welch,VT,D,House
+IL-PeterJ.Roskam,PeterJ.Roskam,IL,,House
+IN-PeterJ.Visclosky,PeterJ.Visclosky,IN,,House
+NY-PeterT.King,PeterT.King,NY,,House
+TX-PeteSessions,PeteSessions,TX,,House
+WA-PramilaJayapal,Pramila Jayapal,WA,D,House
+#NAME?,Pramila Jayapal,WA,D,House
+IL-RajaKrishnamoorthi,RajaKrishnamoorthi,IL,,House
+LA-RalphLeeAbraham,RalphLeeAbraham,LA,,House
+KY-RandPaul,Rand Paul,KY,R,Senate
+#NAME?,Rand Paul,KY,R,Senate
+IL-RandyHultgren,RandyHultgren,IL,,House
+TX-RandyK.WeberSr.,RandyK.WeberSr.,TX,,House
+AZ-RaulM.Grijalva,RaulM.Grijalva,AZ,,House
+ID-RaulR.Labrador,RaulR.Labrador,ID,,House
+CA-RaulRuiz,RaulRuiz,CA,,House
+CT-RichardBlumenthal,Richard Blumenthal,CT,D,Senate
+NC-RichardBurr,Richard Burr,NC,R,Senate
+#NAME?,Richard Burr,NC,R,Senate
+MA-RichardE.Neal,Richard Neal,MA,D,House
+AL-RichardC.Shelby,Richard Shelby,AL,R,Senate
+NC-RichardHudson,RichardHudson,NC,,House
+MN-RichardM.Nolan,RichardM.Nolan,MN,,House
+WA-RickLarsen,Rick Larsen,WA,D,House
+GA-RickW.Allen,RickW.Allen,GA,,House
+CA-RoKhanna,Ro Khanna,CA,D,House
+OH-RobPortman,Rob Portman,OH,R,Senate
+#NAME?,Rob Portman,OH,R,Senate
+UT-RobBishop,RobBishop,UT,,House
+AL-RobertB.Aderholt,RobertB.Aderholt,AL,,House
+"VA-RobertC.\Bobby\""Scott""","RobertC.\Bobby\""Scott""",VA,,House
+OH-RobertE.Latta,RobertE.Latta,OH,,House
+VA-RobertJ.Wittman,RobertJ.Wittman,VA,,House
+NC-RobertPittenger,RobertPittenger,NC,,House
+IL-RobinL.Kelly,RobinL.Kelly,IL,,House
+GA-RobWoodall,RobWoodall,GA,,House
+IA-RodBlum,RodBlum,IA,,House
+IL-RodneyDavis,Rodney Davis,IL,R,House
+NJ-RodneyP.Frelinghuysen,Rodney Frelinghuysen,NJ,R,House
+#NAME?,Rodney Frelinghuysen,NJ,R,House
+MS-RogerF.Wicker,Roger Wicker,MS,R,Senate
+KS-RogerW.Marshall,RogerW.Marshall,KS,,House
+TX-RogerWilliams,RogerWilliams,TX,,House
+WI-RonJohnson,Ron Johnson,WI,R,Senate
+#NAME?,Ron Johnson,WI,R,Senate
+OR-RonWyden,Ron Wyden,OR,D,Senate
+#NAME?,Ron Wyden,OR,D,Senate
+FL-RonDeSantis,RonDeSantis,FL,,House
+WI-RonKind,RonKind,WI,,House
+CT-RosaL.DeLauro,Rosa DeLauro,CT,D,House
+MO-RoyBlunt,Roy Blunt,MO,R,Senate
+#NAME?,Roy Blunt,MO,R,Senate
+AZ-RubenGallego,RubenGallego,AZ,,House
+NV-RubenKihuen,RubenKihuen,NV,,House
+MT-RyanK.Zinke,Ryan Zinke,MT,R,House
+#NAME?,Ryan Zinke,MT,R,House
+PA-RyanA.Costello,RyanA.Costello,PA,,House
+CA-SaludO.Carbajal,Salud Carbajal,CA,D,House
+MO-SamGraves,SamGraves,MO,,House
+TX-SamJohnson,SamJohnson,TX,,House
+MI-SanderM.Levin,SanderM.Levin,MI,,House
+GA-SanfordD.BishopJr.,SanfordD.BishopJr.,GA,,House
+CA-ScottH.Peters,Scott Peters,CA,D,House
+CO-ScottR.Tipton,Scott Tipton,CO,R,House
+TN-ScottDesJarlais,ScottDesJarlais,TN,,House
+PA-ScottPerry,ScottPerry,PA,,House
+VA-ScottTaylor,ScottTaylor,VA,,House
+NY-SeanPatrickMaloney,Sean Patrick Maloney,NY,D,House
+WI-SeanP.Duffy,SeanP.Duffy,WI,,House
+MA-SethMoulton,SethMoulton,MA,,House
+TX-SheilaJacksonLee,SheilaJacksonLee,TX,,House
+RI-SheldonWhitehouse,Sheldon Whitehouse,RI,D,Senate
+#NAME?,Sheldon Whitehouse,RI,D,Senate
+WV-ShelleyMooreCapito,Shelley Moore Capito,WV,R,Senate
+OH-SherrodBrown,Sherrod Brown,OH,D,Senate
+#NAME?,Sherrod Brown,OH,D,Senate
+MD-StenyH.Hoyer,StenyH.Hoyer,MD,,House
+FL-StephanieN.Murphy,StephanieN.Murphy,FL,,House
+MA-StephenF.Lynch,StephenF.Lynch,MA,,House
+#NAME?,StephenF.Lynch,MA,,House
+CA-StephenKnight,StephenKnight,CA,,House
+NM-StevanPearce,StevanPearce,NM,,House
+OH-SteveChabot,Steve Chabot,OH,R,House
+MT-SteveDaines,Steve Daines,MT,R,Senate
+#NAME?,Steve Daines,MT,R,Senate
+TN-SteveCohen,SteveCohen,TN,,House
+IA-SteveKing,SteveKing,IA,,House
+MS-StevenM.Palazzo,StevenM.Palazzo,MS,,House
+OK-SteveRussell,SteveRussell,OK,,House
+LA-SteveScalise,SteveScalise,LA,,House
+OH-SteveStivers,SteveStivers,OH,,House
+AR-SteveWomack,SteveWomack,AR,,House
+IN-SusanW.Brooks,Susan Brooks,IN,R,House
+ME-SusanM.Collins,Susan Collins,ME,R,Senate
+CA-SusanA.Davis,SusanA.Davis,CA,,House
+WA-SuzanK.DelBene,Suzan DelBene,WA,D,House
+OR-SuzanneBonamici,Suzanne Bonamici,OR,D,House
+#NAME?,Suzanne Bonamici,OR,D,House
+WI-TammyBaldwin,Tammy Baldwin,WI,D,Senate
+#NAME?,Tammy Baldwin,WI,D,Senate
+IL-TammyDuckworth,Tammy Duckworth,IL,D,Senate
+TX-TedCruz,Ted Cruz,TX,R,Senate
+#NAME?,Ted Cruz,TX,R,Senate
+CA-TedLieu,Ted Lieu,CA,D,House
+#NAME?,Ted Lieu,CA,D,House
+NC-TedBudd,TedBudd,NC,,House
+TX-TedPoe,TedPoe,TX,,House
+FL-TedS.Yoho,TedS.Yoho,FL,,House
+AL-TerriA.Sewell,TerriA.Sewell,AL,,House
+MS-ThadCochran,Thad Cochran,MS,R,Senate
+FL-TheodoreE.Deutch,TheodoreE.Deutch,FL,,House
+NC-ThomTillis,Thom Tillis,NC,R,Senate
+#NAME?,Thom Tillis,NC,R,Senate
+NY-ThomasR.Suozzi,Thomas Suozzi,NY,D,House
+VA-ThomasA.GarrettJr.,ThomasA.GarrettJr.,VA,,House
+NJ-ThomasMacArthur,ThomasMacArthur,NJ,,House
+KY-ThomasMassie,ThomasMassie,KY,,House
+VA-TimKaine,Tim Kaine,VA,D,Senate
+#NAME?,Tim Kaine,VA,D,Senate
+OH-TimRyan,Tim Ryan,OH,,House
+SC-TimScott,Tim Scott,SC,R,Senate
+PA-TimMurphy,TimMurphy,PA,,House
+MN-TimothyJ.Walz,TimothyJ.Walz,MN,,House
+MI-TimWalberg,TimWalberg,MI,,House
+IN-ToddYoung,Todd Young,IN,R,Senate
+IN-ToddRokita,ToddRokita,IN,,House
+DE-ThomasR.Carper,Tom Carper,DE,D,Senate
+AR-TomCotton,Tom Cotton,AR,R,Senate
+NY-TomReed,Tom Reed,NY,R,House
+NM-TomUdall,Tom Udall,NM,D,Senate
+#NAME?,Tom Udall,NM,D,Senate
+OK-TomCole,TomCole,OK,,House
+MN-TomEmmer,TomEmmer,MN,,House
+GA-TomGraves,TomGraves,GA,,House
+PA-TomMarino,TomMarino,PA,,House
+CA-TomMcClintock,TomMcClintock,CA,,House
+AZ-TomO'Halleran,TomO'Halleran,AZ,,House
+GA-TomPrice,TomPrice,GA,,House
+SC-TomRice,TomRice,SC,,House
+CA-TonyCardenas,Tony Cardenas,CA,,House
+#NAME?,Tony Cardenas,CA,,House
+AZ-TrentFranks,TrentFranks,AZ,,House
+MS-TrentKelly,TrentKelly,MS,,House
+IN-TreyHollingsworth,Trey Hollingsworth,IN,R,House
+SC-TreyGowdy,TreyGowdy,SC,,House
+HI-TulsiGabbard,TulsiGabbard,HI,,House
+rec2gLPgUJBbAzMDS,unknown,unknown,unknown,unknown
+recAK1nSbXmfEMblr,unknown,unknown,unknown,unknown
+recAYXaYYpThDXrgX,unknown,unknown,unknown,unknown
+recBn0ZaAx1jwUrel,unknown,unknown,unknown,unknown
+recEnOW3RpyaDtnpM,unknown,unknown,unknown,unknown
+recg2WXU7iTuEBCkD,unknown,unknown,unknown,unknown
+recgK3k2Lzyo1uxPt,unknown,unknown,unknown,unknown
+rech96inQPKRU34Sw,unknown,unknown,unknown,unknown
+recHLlMt4IW9C2kA0,unknown,unknown,unknown,unknown
+recHpcWkCENCjn4qi,unknown,unknown,unknown,unknown
+recK0cBLfznOvgm0g,unknown,unknown,unknown,unknown
+recoODv4zx7Gt8GVm,unknown,unknown,unknown,unknown
+recPv40AfmqJGvKVE,unknown,unknown,unknown,unknown
+recQYRZDfGdpgoX8c,unknown,unknown,unknown,unknown
+recRw0mYTGqOFjCJk,unknown,unknown,unknown,unknown
+recvBoLB9lXUSnuqo,unknown,unknown,unknown,unknown
+recW8VkfDtI3ZZ61u,unknown,unknown,unknown,unknown
+recX4L8Q11QQpZBM0,unknown,unknown,unknown,unknown
+recYIrkoSRVkffBE1,unknown,unknown,unknown,unknown
+CA-Vacant,Vacant,CA,,House
+KS-Vacant,Vacant,KS,,House
+FL-ValButlerDemings,ValButlerDemings,FL,,House
+FL-VernBuchanan,VernBuchanan,FL,,House
+TX-VicenteGonzalez,VicenteGonzalez,TX,,House
+MO-VickyHartzler,VickyHartzler,MO,,House
+NC-VirginiaFoxx,VirginiaFoxx,NC,,House
+NC-WalterB.Jones,WalterB.Jones,NC,,House
+OH-WarrenDavidson,WarrenDavidson,OH,,House
+TX-WillHurd,WillHurd,TX,,House
+MA-WilliamR.Keating,WilliamR.Keating,MA,,House
+CA-XavierBecerra,Xavier Becerra,CA,D,House
+#NAME?,Xavier Becerra,CA,D,House
+NY-YvetteD.Clarke,Yvette Clarke,NY,D,House
+CA-ZoeLofgren,ZoeLofgren,CA,,House
