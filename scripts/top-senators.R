@@ -1,32 +1,30 @@
-# 5Calls - Calls by Issue Analysis
+# Response by Senator Name
 
-# CHART: Top Issues by Response
-issues_ranked <- calls %>%
-  group_by(issue_desc,issue_id) %>%
-  summarize(calls=sum(calls))
-
-rm(top_issues)
+# LOAD PACKAGES
+#===============
 library(dplyr)
 library(tidyr)
 library(ggplot2)
 library(scales)
+#===============
 
-top_issues <- calls %>%
-  filter(result %in% c("contacted", "unavailable", "vm")) %>%
-  group_by(issue_desc,issue_id,result) %>%
+top_senators <- calls %>%
+  filter(rep_pos == "Senate") %>%
+  group_by(rep_name,rep_party,result) %>%
   summarize(calls=sum(calls))
-  
-top_issues$result <- factor(top_issues$result, levels=c("unavailable","vm","contacted"))
-ggplot( top_issues[order(top_issues$result,decreasing=T),], 
-        aes(x = reorder(issue_desc,calls), y = calls)) +
+
+top_senators$result <- factor(top_senators$result, levels=c("unavailable","vm","contacted"))
+ggplot( top_senators[order(top_senators$result,decreasing=T),], 
+        aes(x = reorder(rep_name,calls), y = calls)) +
   geom_bar(aes(fill = result), stat="identity", width=0.6) + 
   coord_flip() +
   scale_y_continuous(expand = c(0, 0), labels = comma) +
-  ggtitle("Top Issues by Call Response") +
+  ggtitle("Ranked Response by Senator Name") +
   labs(y="Attempted Calls as of Feb 5, 2017") +
   scale_fill_manual(values = c('red', 'lightblue', 'blue')) + 
   guides(fill = guide_legend(reverse=TRUE)) +
   theme(plot.title = element_text(size=rel(1.5), hjust=0),
+        axis.text.y=element_text(size=rel(0.7)),
         axis.ticks=element_blank(),
         axis.title.x=element_text(size=rel(0.8), face="italic"),
         axis.title.y=element_blank(),

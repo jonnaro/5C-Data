@@ -1,4 +1,6 @@
-# 5Calls - Data Load
+# Clear existing data
+rm(list=ls(all=TRUE))
+
 
 # LOAD PACKAGES
 #===============
@@ -7,11 +9,11 @@ library(dplyr)
 library(tidyr)
 #===============
 
+
 # LOAD DATA
 #==========
-system("ls *.db", show=TRUE)
 sqlite   <- dbDriver("SQLite")
-callsdb <- dbConnect(sqlite,"fivecalls-2-6-17.db")
+callsdb <- dbConnect(sqlite,"data/fivecalls-2-12-17.db")
 
 calls = dbGetQuery(callsdb, 
   "SELECT time, issueID, contactID, result, count(*) as calls 
@@ -19,6 +21,7 @@ calls = dbGetQuery(callsdb,
    GROUP BY time, issueID, contactID, result
    ORDER BY time DESC")
 #==========
+
 
 # TRANSFORM DATA
 #===============
@@ -38,8 +41,8 @@ contact_map = read.csv("meta/contact_map.csv", header=TRUE)
 issue_map = read.csv("meta/issue_map.csv", header=TRUE)
 state_map = read.csv("meta/state_map.csv", header=TRUE)
 
-calls <- merge(x=issue_map, y=calls, by.x=c("issue_id"), by.y=c("issueID"))
-calls <- merge(x=contact_map, y=calls, by.x=c("contact_id"), by.y=c("contactID"))
-calls <- merge(x=state_map, y=calls, by.x=c("state_abbr"), by.y=c("rep_state"))
+calls <- merge(x=issue_map, y=calls, by.x=c("issue_id"), by.y=c("issueID"), all=TRUE)
+calls <- merge(x=contact_map, y=calls, by.x=c("contact_id"), by.y=c("contactID"), all=TRUE)
+calls <- merge(x=state_map, y=calls, by.x=c("state_abbr"), by.y=c("rep_state"), all=TRUE)
 #===============
 

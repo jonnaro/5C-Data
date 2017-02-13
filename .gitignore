@@ -34,7 +34,10 @@ vignettes/*.pdf
 
 # Anything potentially sensitive
 /output/
+/data/
+/meta/issue_map.csv
 *.png
 *.db
 *.xlsx
 *.txt
+.Rproj.user
