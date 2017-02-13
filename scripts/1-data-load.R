@@ -12,15 +12,15 @@ library(tidyr)
 
 # LOAD DATA
 #==========
-sqlite   <- dbDriver("SQLite")
-callsdb <- dbConnect(sqlite,"data/fivecalls-2-12-17.db")
+dbfile = list.files(path="./data", pattern="*.db", full.names=TRUE)
+sqlite <- dbDriver("SQLite")
+callsdb <- dbConnect(sqlite,dbfile)
 
 calls = dbGetQuery(callsdb, 
   "SELECT time, issueID, contactID, result, count(*) as calls 
    FROM results
    GROUP BY time, issueID, contactID, result
    ORDER BY time DESC")
-#==========
 
 
 # TRANSFORM DATA
@@ -37,12 +37,12 @@ calls <- calls %>%
   select(time, date, day, hour, issueID, contactID, result, calls)
 
 # load and merge meta data
-contact_map = read.csv("meta/contact_map.csv", header=TRUE)
-issue_map = read.csv("meta/issue_map.csv", header=TRUE)
-state_map = read.csv("meta/state_map.csv", header=TRUE)
+contact_map = read.csv("./meta/contact_map.csv", header=TRUE)
+issue_map = read.csv("./meta/issue_map.csv", header=TRUE)
+state_map = read.csv("./meta/state_map.csv", header=TRUE)
 
 calls <- merge(x=issue_map, y=calls, by.x=c("issue_id"), by.y=c("issueID"), all=TRUE)
 calls <- merge(x=contact_map, y=calls, by.x=c("contact_id"), by.y=c("contactID"), all=TRUE)
 calls <- merge(x=state_map, y=calls, by.x=c("state_abbr"), by.y=c("rep_state"), all=TRUE)
-#===============
+
 
