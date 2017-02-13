@@ -1,20 +1,17 @@
-# Clear existing data
-rm(list=ls(all=TRUE))
+rm(list = ls(all = TRUE))  # Clear existing data
 
-
-# LOAD PACKAGES
-#===============
+# PACKAGES
 library(RSQLite)
 library(dplyr)
 library(tidyr)
-#===============
 
 
 # LOAD DATA
-#==========
-dbfile = list.files(path="./data", pattern="*.db", full.names=TRUE)
-sqlite <- dbDriver("SQLite")
-callsdb <- dbConnect(sqlite,dbfile)
+dbFile  <- list.files(path       = "./data", 
+                      pattern    = "*.db", 
+                      full.names = TRUE)
+sqlite  <- dbDriver("SQLite")
+callsdb <- dbConnect(sqlite, dbFile)
 
 calls = dbGetQuery(callsdb, 
   "SELECT time, issueID, contactID, result, count(*) as calls 
@@ -24,25 +21,43 @@ calls = dbGetQuery(callsdb,
 
 
 # TRANSFORM DATA
-#===============
-# convert time into PST and break into usable components
 calls$time <- as.POSIXct(as.numeric(as.character(calls$time)),
-                        origin="1970-01-01", tz="UTC")
-calls$time <- as.POSIXct(format(calls$time, tz="America/Los_Angeles", usetz=TRUE))
+                        origin = "1970-01-01", 
+                        tz     = "UTC")
+# convert time into PST
+calls$time <- as.POSIXct(format(calls$time, 
+                                tz    = "America/Los_Angeles", 
+                                usetz = TRUE))
+# break out timestamp into components
 calls$date <- as.Date(as.POSIXct(calls$time))
-calls$day <- weekdays(as.Date(calls$time))
-calls$hour <- format(calls$time, format='%H')
+calls$day  <- weekdays(as.Date(calls$time))
+calls$hour <- format(calls$time, format = "%H")
 
 calls <- calls %>%
   select(time, date, day, hour, issueID, contactID, result, calls)
 
 # load and merge meta data
 contact_map = read.csv("./meta/contact_map.csv", header=TRUE)
-issue_map = read.csv("./meta/issue_map.csv", header=TRUE)
-state_map = read.csv("./meta/state_map.csv", header=TRUE)
+issue_map   = read.csv("./meta/issue_map.csv", header=TRUE)
+state_map   = read.csv("./meta/state_map.csv", header=TRUE)
 
-calls <- merge(x=issue_map, y=calls, by.x=c("issue_id"), by.y=c("issueID"), all=TRUE)
-calls <- merge(x=contact_map, y=calls, by.x=c("contact_id"), by.y=c("contactID"), all=TRUE)
-calls <- merge(x=state_map, y=calls, by.x=c("state_abbr"), by.y=c("rep_state"), all=TRUE)
+# issue meta data
+calls <- merge(x    = issue_map, 
+               y    = calls, 
+               by.x = c("issue_id"), 
+               by.y = c("issueID"), 
+               all  = TRUE)
 
+# representative meta data
+calls <- merge(x    = contact_map, 
+               y    = calls, 
+               by.x = c("contact_id"), 
+               by.y = c("contactID"), 
+               all  = TRUE)
 
+# state meta data
+calls <- merge(x    = state_map, 
+               y    = calls, 
+               by.x = c("state_abbr"), 
+               by.y = c("rep_state"), 
+               all  = TRUE)
