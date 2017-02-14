@@ -9,8 +9,8 @@ library(scales)
 
 # Prep data
 top_senators <- calls %>%
-  filter(rep_pos == "Senate") %>%
-  group_by(rep_name, rep_party, result) %>%
+  filter(contactPos == "Senate") %>%
+  group_by(contactName, contactParty, result) %>%
   summarize(calls = sum(calls))
 
 top_senators$result <- factor(top_senators$result, 
@@ -18,7 +18,7 @@ top_senators$result <- factor(top_senators$result,
 
 # Render chart
 ggplot( top_senators[order(top_senators$result, decreasing = T),], 
-        aes(x = reorder(rep_name, calls), y = calls)) +
+        aes(x = reorder(contactName, calls), y = calls)) +
   geom_bar(aes(fill = result), stat = "identity", width = 0.6) + 
   coord_flip() +
   scale_y_continuous(expand = c(0, 0), labels = comma) +

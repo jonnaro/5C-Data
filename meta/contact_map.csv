@@ -1,4 +1,4 @@
-contactID,rep_name,stateID,rep_party,rep_pos
+contactID,contactName,stateID,contactParty,contactPos
 VA-ADonaldMcEachin,A.DonaldMcEachin,VA,,House
 GA-ADrewFergusonIV,A.DrewFergusonIV,GA,,House
 CA-AdamBSchiff,Adam Schiff,CA,D,House
