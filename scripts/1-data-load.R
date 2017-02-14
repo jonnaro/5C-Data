@@ -4,7 +4,7 @@ rm(list = ls(all = TRUE))  # Clear existing data
 library(RSQLite)
 library(dplyr)
 library(tidyr)
-
+library(stringr)
 
 # LOAD DATA
 dbFile  <- list.files(path       = "./data", 
@@ -24,10 +24,12 @@ calls = dbGetQuery(callsdb,
 calls$time <- as.POSIXct(as.numeric(as.character(calls$time)),
                          origin = "1970-01-01", 
                          tz     = "UTC")
+
 # convert time into PST
 calls$time <- as.POSIXct(format(calls$time, 
                                 tz    = "America/Los_Angeles", 
                                 usetz = TRUE))
+
 # break out timestamp into components
 calls$date <- as.Date(as.POSIXct(calls$time))
 calls$day  <- weekdays(as.Date(calls$time))
@@ -37,27 +39,24 @@ calls <- calls %>%
   select(time, date, day, hour, issueID, contactID, result, calls)
 
 # load and merge meta data
-contact_map = read.csv("./meta/contact_map.csv", header = TRUE)
-issue_map   = read.csv("./meta/issue_map.csv", header = TRUE)
-state_map   = read.csv("./meta/state_map.csv", header = TRUE)
+contact_map = read.csv("./meta/contact_map.csv", header = TRUE, stringsAsFactors = FALSE)
+issue_map   = read.csv("./meta/issue_map.csv", header = TRUE, stringsAsFactors = FALSE)
+state_map   = read.csv("./meta/state_map.csv", header = TRUE, stringsAsFactors = FALSE)
 
 # issue meta data
-calls <- merge(x    = issue_map, 
-               y    = calls, 
-               by.x = c("issue_id"), 
-               by.y = c("issueID"), 
-               all  = TRUE)
+calls <- calls %>%
+  left_join(x  = calls,
+            y  = issue_map,
+            by = "issueID") 
 
 # representative meta data
-calls <- merge(x    = contact_map, 
-               y    = calls, 
-               by.x = c("contact_id"), 
-               by.y = c("contactID"), 
-               all  = TRUE)
+calls <- calls %>%
+  left_join(x  = calls,
+            y  = contact_map,
+            by = "contactID")
 
 # state meta data
-calls <- merge(x    = state_map, 
-               y    = calls, 
-               by.x = c("state_abbr"), 
-               by.y = c("rep_state"), 
-               all  = TRUE)
+calls <- calls %>%
+  left_join(x  = calls,
+            y  = state_map,
+            by = "stateID")

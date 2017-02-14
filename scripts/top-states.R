@@ -9,7 +9,7 @@ library(scales)
 
 # Prep data
 top_states <- calls %>%
-  group_by(state_name, result) %>%
+  group_by(stateName, result) %>%
   summarize(calls = sum(calls))
 
 top_states$result <- factor(top_states$result, 
@@ -17,7 +17,7 @@ top_states$result <- factor(top_states$result,
 
 # Render chart
 ggplot( top_states[order(top_states$result, decreasing = T), ], 
-        aes(x = reorder(state_name,calls), y = calls)) +
+        aes(x = reorder(stateName, calls), y = calls)) +
   geom_bar(aes(fill = result), stat = "identity", width = 0.6) + 
   coord_flip() +
   scale_y_continuous(expand = c(0, 0), labels = comma) +

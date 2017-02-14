@@ -8,14 +8,14 @@ library(scales)
 
 
 state_trend <- calls %>%
-  group_by(state_name,date) %>%
+  group_by(stateName,date) %>%
   summarize(calls = sum(calls)) %>%
-  filter(date > "2017-01-24" & state_name != "unknown")
+  filter(date > "2017-01-24" & stateName != "unknown")
 
 ggplot(state_trend, aes(x = date, y = calls)) + 
   geom_line() +
-  facet_wrap(~ state_name, scales = "free_y")
-scale_x_date(breaks = NULL) +
+  facet_wrap(~ stateName, scales = "free_y") +
+  scale_x_date(breaks = NULL) +
   scale_y_continuous(expand = c(0, 0), labels = comma) +
   ggtitle("Call Volume by Representative State") +
   xlab("") + 

@@ -12,7 +12,8 @@ hour_trend <- calls %>%
   group_by(hour, result) %>%
   summarize(calls = sum(calls))
 
-hour_trend$result <- factor(hour_trend$result, levels = c("unavailable", "vm", "contacted"))
+hour_trend$result <- factor(hour_trend$result, 
+                            levels = c("unavailable", "vm", "contacted"))
 
 ggplot(hour_trend, aes(x = hour, y = calls)) + 
   geom_bar(aes(fill = result), stat = "identity", width = 0.6) + 

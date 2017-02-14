@@ -9,7 +9,7 @@ library(scales)
 
 dow <- calls %>%
   filter(date > "2017-01-24" & result %in% c("contacted", "unavailable", "vm")) %>%
-  group_by(day,result) %>%
+  group_by(day, result) %>%
   summarize(calls = sum(calls))
 
 dow$result <- factor(dow$result, levels = c("unavailable", "vm", "contacted"))
