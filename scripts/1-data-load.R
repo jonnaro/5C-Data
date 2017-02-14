@@ -3,8 +3,6 @@ rm(list = ls(all = TRUE))  # Clear existing data
 # PACKAGES
 library(RSQLite)
 library(dplyr)
-library(tidyr)
-library(stringr)
 
 # LOAD DATA
 dbFile  <- list.files(path       = "./data", 
