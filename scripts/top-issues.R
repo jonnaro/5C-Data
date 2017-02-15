@@ -1,9 +1,6 @@
 # Top Issues by Response
 
-#  PACKAGES
-library(dplyr)
-library(tidyr)
-library(ggplot2)
+library(tidyverse)
 library(scales)
 
 

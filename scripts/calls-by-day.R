@@ -1,9 +1,6 @@
 # Call Volume by Day of Week
 
-# PACKAGES
-library(dplyr)
-library(tidyr)
-library(ggplot2)
+library(tidyverse)
 library(scales)
 
 

@@ -1,9 +1,6 @@
 # Total Call Volume by Date
 
-# PACKAGES
-library(dplyr)
-library(tidyr)
-library(ggplot2)
+library(tidyverse)
 library(scales)
 
 # Prep data
@@ -50,7 +47,6 @@ ggplot(date_trend, aes(x = date)) +
 ggsave("./output/daily-call-volume.png")
 
 # output: cumulative calls per day
-# TODO: Currently not displaying correctly.
 ggplot(date_trend, aes(x = date, y = CumSuccess, group = 1)) + 
   geom_line(colour = "blue", size = 1.0) +
   geom_point(colour = "black") +

@@ -1,9 +1,6 @@
 # Call Volume by Representative State and Day
 
-# PACKAGES
-library(dplyr)
-library(tidyr)
-library(ggplot2)
+library(tidyverse)
 library(scales)
 
 
