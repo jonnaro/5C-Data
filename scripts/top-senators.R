@@ -3,8 +3,6 @@
 library(tidyverse)
 library(scales)
 
-
-# Prep data
 top_senators <- calls %>%
   filter(contactPos == "Senate") %>%
   group_by(contactName, contactParty, result) %>%
@@ -35,3 +33,5 @@ ggplot( top_senators[order(top_senators$result, decreasing = T),],
         panel.grid.major.x = element_line(colour = "grey80", size = 0.2),
         panel.grid.minor.y = element_blank(),
         panel.grid.major.y = element_blank())
+
+ggsave("./output/calls-by-senator.png")

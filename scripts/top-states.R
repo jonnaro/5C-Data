@@ -3,8 +3,6 @@
 library(tidyverse)
 library(scales)
 
-
-# Prep data
 top_states <- calls %>%
   group_by(stateName, result) %>%
   summarize(calls = sum(calls))
@@ -33,3 +31,5 @@ ggplot( top_states[order(top_states$result, decreasing = T), ],
         panel.grid.major.x = element_line(colour = "grey80", size = 0.2),
         panel.grid.minor.y = element_blank(),
         panel.grid.major.y = element_blank())
+
+ggsave("./output/calls-by-state.png")

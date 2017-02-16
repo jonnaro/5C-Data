@@ -65,4 +65,3 @@ calls <- calls %>%
          issueID, issueDesc,
          contactID, stateID, stateName, contactName, contactPos, contactParty,
          result, calls)
-

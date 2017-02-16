@@ -3,8 +3,6 @@
 library(tidyverse)
 library(scales)
 
-
-# Prep data
 issues_ranked <- calls %>%
   group_by(issueDesc, issueID) %>%
   summarize(calls = sum(calls))
@@ -39,3 +37,5 @@ ggplot(top_issues[order(top_issues$result, decreasing = T), ],
         panel.grid.major.y = element_blank(),
         panel.grid.minor.y = element_blank(),
         plot.title         = element_text(size = rel(1.5), hjust = 0))
+
+ggsave("./output/calls-by-issue.png")

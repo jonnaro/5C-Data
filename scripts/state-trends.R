@@ -3,7 +3,6 @@
 library(tidyverse)
 library(scales)
 
-
 state_trend <- calls %>%
   group_by(stateName,date) %>%
   summarize(calls = sum(calls)) %>%
@@ -28,3 +27,5 @@ ggplot(state_trend, aes(x = date, y = calls)) +
         panel.grid.major.x = element_line(colour = "grey80", size = 0.2),
         panel.grid.minor.y = element_line(colour = "grey80", size = 0.2),
         panel.grid.major.y = element_line(colour = "grey80", size = 0.2))
+
+ggsave("./output/calls-trendbystate.png")

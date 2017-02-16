@@ -30,3 +30,5 @@ ggplot(hour_trend, aes(x = hour, y = calls)) +
         panel.grid.major.x = element_line(colour = "grey80", size = 0.2),
         panel.grid.minor.y = element_line(colour = "grey80", size = 0.2),
         panel.grid.major.y = element_line(colour = "grey80", size = 0.2))
+
+ggsave("./output/calls-by-hourofday.png")
