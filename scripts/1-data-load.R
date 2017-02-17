@@ -69,4 +69,4 @@ calls <- calls %>%
          result, calls)
 
 # data recency
-updated <- max(calls$date, na.rm = TRUE)
+updated <- format(max(calls$date, na.rm = TRUE), format = "%d %b %Y")
