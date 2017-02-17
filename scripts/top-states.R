@@ -15,8 +15,9 @@ ggplot( top_states[order(top_states$result, decreasing = T), ],
         aes(x = reorder(stateName, calls), y = calls)) +
   geom_bar(aes(fill = result), stat = "identity", width = 0.6) + 
   coord_flip() +
-  labs(title = "Ranked Response by Representative State",
-           y = "Attempted Calls") + 
+  labs(title   = "Ranked Response by Representative State",
+       caption = paste("Last updated:", updated),
+       y       = "Attempted Calls") + 
   scale_fill_manual(values = c('red', 'lightblue', 'blue')) + 
   scale_y_continuous(expand = c(0, 0), labels = comma) +
   guides(fill = guide_legend(reverse = TRUE)) +

@@ -48,7 +48,8 @@ ggsave("./output/daily-call-volume.png")
 ggplot(date_trend, aes(x = date, y = CumSuccess, group = 1)) + 
   geom_line(colour = "blue", size = 1.0) +
   geom_point(colour = "black") +
-  labs(title = "Total Successful Calls Made Over Time") +
+  labs(title   = "Total Successful Calls Made Over Time",
+       caption = paste("Last updated:", updated)) +
   expand_limits(y = 0) + 
   scale_x_date(date_breaks = "1 day", labels = date_format("%b %d")) +
   scale_y_continuous(labels = comma) +

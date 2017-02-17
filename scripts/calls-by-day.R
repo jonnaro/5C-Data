@@ -12,7 +12,8 @@ DayOfWeek$result <- factor(DayOfWeek$result, levels = c("unavailable", "vm", "co
 
 ggplot(DayOfWeek, aes(x = day, y = calls)) + 
   geom_bar(aes(fill = result), stat = "identity", width = 0.6) +
-  labs(title = "Call Volume by Day of Week") + 
+  labs(title   = "Call Volume by Day of Week",
+       caption = paste("Last updated:", updated)) +
   scale_y_continuous(expand = c(0, 0), labels = comma) +
   scale_x_discrete(limits = c("Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday")) +
   xlab("Day of Week (PST)") +

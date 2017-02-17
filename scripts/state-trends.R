@@ -11,7 +11,8 @@ state_trend <- calls %>%
 ggplot(state_trend, aes(x = date, y = calls)) + 
   geom_line() +
   facet_wrap(~ stateName, scales = "free_y") +
-  labs(title = "Call Volume by Representative State") + 
+  labs(title   = "Call Volume by Representative State",
+       caption = paste("Last updated:", updated)) +
   scale_x_date(breaks = NULL) +
   scale_y_continuous(expand = c(0, 0), labels = comma) +
   theme(axis.text.x        = element_blank(),

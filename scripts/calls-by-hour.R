@@ -14,7 +14,8 @@ hour_trend$result <- factor(hour_trend$result,
 
 ggplot(hour_trend, aes(x = hour, y = calls)) + 
   geom_bar(aes(fill = result), stat = "identity", width = 0.6) + 
-  labs(title = "Call Volume by Hour of Day") +
+  labs(title   = "Call Volume by Hour of Day",
+       caption = paste("Last updated:", updated)) +
   scale_y_continuous(expand = c(0, 0), labels = comma) +
   xlab("Hour of Day (Pacific Time)") + 
   ylab("") +

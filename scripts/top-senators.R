@@ -17,8 +17,9 @@ ggplot( top_senators[order(top_senators$result, decreasing = T),],
   geom_bar(aes(fill = result), stat = "identity", width = 0.6) + 
   coord_flip() +
   guides(fill = guide_legend(reverse = TRUE)) +
-  labs(title = "Ranked Response by Senator Name",
-           y = "Attempted Calls") +
+  labs(title   = "Ranked Response by Senator Name",
+       caption = paste("Last updated:", updated),
+       y       = "Attempted Calls") +
   scale_fill_manual(values = c('red', 'lightblue', 'blue')) + 
   scale_y_continuous(expand = c(0, 0), labels = comma) +
   theme(axis.text.y        = element_text(size = rel(0.7)),
