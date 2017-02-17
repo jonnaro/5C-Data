@@ -2,9 +2,9 @@
 
 rm(list = ls(all = TRUE))  # Clear existing data
 
-# PACKAGES
 library(RSQLite)
-library(dplyr, warn.conflicts = FALSE)
+library(tidyverse)
+library(lubridate, warn.conflicts = FALSE)
 
 # LOAD DATA
 dbFile  <- list.files(path       = "./data", 
@@ -31,10 +31,12 @@ calls$time <- as.POSIXct(format(calls$time,
                                 tz    = "America/Los_Angeles", 
                                 usetz = TRUE))
 
-# break out timestamp into components
-calls$date <- as.Date(as.POSIXct(calls$time))
-calls$day  <- weekdays(as.Date(calls$time))
-calls$hour <- format(calls$time, format = "%H")
+# break out date-time components
+calls$date  <- as.Date(as.POSIXct(calls$time))
+calls$month <- month(calls$time)
+calls$week  <- week(calls$time)
+calls$day   <- wday(calls$time, label = TRUE)
+calls$hour  <- hour(calls$time)
 
 # load and merge meta data
 contact_map = read.csv("./meta/contact_map.csv", header = TRUE, stringsAsFactors = FALSE)
@@ -61,7 +63,10 @@ calls <- calls %>%
 
 # organize dataframe
 calls <- calls %>%
-  select(time, date, day, hour, 
+  select(time, date, month, week, day, hour, 
          issueID, issueDesc,
          contactID, stateID, stateName, contactName, contactPos, contactParty,
          result, calls)
+
+# data recency
+updated <- max(calls$date, na.rm = TRUE)
