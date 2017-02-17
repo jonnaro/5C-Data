@@ -11,11 +11,9 @@ state_trend <- calls %>%
 ggplot(state_trend, aes(x = date, y = calls)) + 
   geom_line() +
   facet_wrap(~ stateName, scales = "free_y") +
+  labs(title = "Call Volume by Representative State") + 
   scale_x_date(breaks = NULL) +
   scale_y_continuous(expand = c(0, 0), labels = comma) +
-  ggtitle("Call Volume by Representative State") +
-  xlab("") + 
-  ylab("") +
   theme(axis.text.x        = element_blank(),
         axis.ticks         = element_blank(),
         axis.title.x       = element_blank(),
@@ -23,9 +21,9 @@ ggplot(state_trend, aes(x = date, y = calls)) +
         legend.text        = element_blank(),
         legend.title       = element_blank(),
         panel.background   = element_blank(),
-        panel.grid.minor.x = element_blank(),
         panel.grid.major.x = element_line(colour = "grey80", size = 0.2),
-        panel.grid.minor.y = element_line(colour = "grey80", size = 0.2),
-        panel.grid.major.y = element_line(colour = "grey80", size = 0.2))
+        panel.grid.minor.x = element_blank(),
+        panel.grid.major.y = element_line(colour = "grey80", size = 0.2),
+        panel.grid.minor.y = element_line(colour = "grey80", size = 0.2))
 
 ggsave("./output/calls-trendbystate.png")

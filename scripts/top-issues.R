@@ -21,11 +21,11 @@ ggplot(top_issues[order(top_issues$result, decreasing = T), ],
         aes(x = reorder(issueDesc, calls), y = calls)) +
   geom_bar(aes(fill = result), stat = "identity", width = 0.6) + 
   coord_flip() +
-  scale_y_continuous(expand = c(0, 0), labels = comma) +
-  ggtitle("Issues With The Largest Response") +
-  labs(y="Attempted Calls") +
-  scale_fill_manual(values = c('red', 'lightblue', 'blue')) + 
   guides(fill = guide_legend(reverse = TRUE)) +
+  labs(title = "Issues With The Largest Response",
+           y = "Attempted Calls") + 
+  scale_fill_manual(values = c('red', 'lightblue', 'blue')) + 
+  scale_y_continuous(expand = c(0, 0), labels = comma) +
   theme(axis.ticks         = element_blank(),
         axis.title.x       = element_text(size = rel(0.8), face = "italic"),
         axis.title.y       = element_blank(),

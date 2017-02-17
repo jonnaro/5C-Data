@@ -25,11 +25,9 @@ date_trend <- within(date_trend, CumTotal   <- cumsum(TotalCalls))
 ggplot(date_trend, aes(x = date)) + 
   geom_bar(aes(y = TotalCalls, group = 1), stat = "identity", fill = "orange") +
   geom_bar(aes(y = SuccessCalls, group = 1), stat = "identity", fill = "blue") +
+  labs(title = "Daily Call Volume") +
   scale_x_date(date_breaks = "1 day", labels = date_format("%b %d")) +
   scale_y_continuous(expand = c(0, 0), labels = comma) +
-  ggtitle("Daily Call Volume") +
-  xlab("") + 
-  ylab("") +
   theme(axis.text.x        = element_text(angle = 45, hjust = 1),
         axis.text.y        = element_text(size = rel(1.1)),
         axis.ticks         = element_blank(),
@@ -50,12 +48,10 @@ ggsave("./output/daily-call-volume.png")
 ggplot(date_trend, aes(x = date, y = CumSuccess, group = 1)) + 
   geom_line(colour = "blue", size = 1.0) +
   geom_point(colour = "black") +
+  labs(title = "Total Successful Calls Made Over Time") +
   expand_limits(y = 0) + 
   scale_x_date(date_breaks = "1 day", labels = date_format("%b %d")) +
   scale_y_continuous(labels = comma) +
-  ggtitle("Total Successful Calls Made Over Time") +
-  xlab("") + 
-  ylab("") +
   theme(axis.text.x        = element_text(angle = 90, hjust = 1),
         axis.text.y        = element_text(size = rel(1.0)),
         axis.ticks         = element_blank(),
