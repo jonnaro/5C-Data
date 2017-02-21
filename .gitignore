@@ -38,4 +38,6 @@ vignettes/*.pdf
 *.db
 *.xlsx
 *.txt
+*.pdf
 .Rproj.user
+.Renviron

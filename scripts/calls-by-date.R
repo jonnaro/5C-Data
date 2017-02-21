@@ -3,7 +3,6 @@
 library(tidyverse)
 library(scales)
 
-# Prep data
 date_trend <- calls %>%
   group_by(date, result) %>%
   summarize(calls = sum(calls)) %>%
@@ -25,7 +24,8 @@ date_trend <- within(date_trend, CumTotal   <- cumsum(TotalCalls))
 ggplot(date_trend, aes(x = date)) + 
   geom_bar(aes(y = TotalCalls, group = 1), stat = "identity", fill = "orange") +
   geom_bar(aes(y = SuccessCalls, group = 1), stat = "identity", fill = "blue") +
-  labs(title = "Daily Call Volume") +
+  labs(title   = "Daily Call Volume",
+       caption = paste("Last updated:", updated)) +
   scale_x_date(date_breaks = "1 day", labels = date_format("%b %d")) +
   scale_y_continuous(expand = c(0, 0), labels = comma) +
   theme(axis.text.x        = element_text(angle = 45, hjust = 1),
