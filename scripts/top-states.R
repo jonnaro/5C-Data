@@ -3,6 +3,22 @@
 library(tidyverse)
 library(scales)
 
+# summarize calls by state
+state_calls <- calls %>%
+  group_by(stateName, result) %>%
+  summarize(calls = sum(calls))
+
+state_calls <- spread(state_calls, result, calls)
+
+state_calls <- state_calls %>%
+  mutate(SuccessCalls = contacted + vm,
+         FailedCalls  = unavailable,
+         TotalCalls   = contacted + vm + unavailable,
+         AvailPct     = 100 * (contacted + vm) / TotalCalls) %>%
+  select(stateName, SuccessCalls, FailedCalls, TotalCalls, AvailPct) %>%
+  arrange(desc(TotalCalls))
+
+# tranform data for chart
 top_states <- calls %>%
   group_by(stateName, result) %>%
   summarize(calls = sum(calls))

@@ -41,3 +41,4 @@ vignettes/*.pdf
 *.pdf
 .Rproj.user
 .Renviron
+*.Rmd

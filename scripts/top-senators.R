@@ -3,6 +3,23 @@
 library(tidyverse)
 library(scales)
 
+# summarize calls by senator
+senator_calls <- calls %>%
+  filter(contactPos == "Senate") %>%
+  group_by(contactName, contactParty, result) %>%
+  summarize(calls = sum(calls))
+
+senator_calls <- spread(senator_calls, result, calls)
+
+senator_calls <- senator_calls %>%
+  mutate(SuccessCalls = contacted + vm,
+         FailedCalls  = unavailable,
+         TotalCalls   = contacted + vm + unavailable,
+         AvailPct     = 100 * (contacted + vm) / TotalCalls) %>%
+  select(contactName, contactParty, SuccessCalls, FailedCalls, TotalCalls, AvailPct) %>%
+  arrange(desc(TotalCalls))
+
+# tranform data for chart
 top_senators <- calls %>%
   filter(contactPos == "Senate") %>%
   group_by(contactName, contactParty, result) %>%

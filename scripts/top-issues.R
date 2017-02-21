@@ -3,14 +3,25 @@
 library(tidyverse)
 library(scales)
 
-issues_ranked <- calls %>%
-  group_by(issueDesc, issueID) %>%
+# summarize calls by issue
+issue_calls <- calls %>%
+  group_by(issueName, result) %>%
   summarize(calls = sum(calls))
-# check issues_ranked for missing issue_map values
 
+issue_calls <- spread(issue_calls, result, calls)
+
+issue_calls <- issue_calls %>%
+  mutate(SuccessCalls = contacted + vm,
+         FailedCalls  = unavailable,
+         TotalCalls   = contacted + vm + unavailable,
+         AvailPct     = 100 * (contacted + vm) / TotalCalls) %>%
+  select(issueName, SuccessCalls, FailedCalls, TotalCalls, AvailPct) %>%
+  arrange(desc(TotalCalls))
+
+# tranform data for chart
 top_issues <- calls %>%
   filter(result %in% c("contacted", "unavailable", "vm")) %>%
-  group_by(issueDesc, issueID, result) %>%
+  group_by(issueName, result) %>%
   summarize(calls = sum(calls))
   
 top_issues$result <- factor(top_issues$result, 
@@ -18,11 +29,11 @@ top_issues$result <- factor(top_issues$result,
 
 # Render chart
 ggplot(top_issues[order(top_issues$result, decreasing = T), ], 
-        aes(x = reorder(issueDesc, calls), y = calls)) +
+        aes(x = reorder(issueName, calls), y = calls)) +
   geom_bar(aes(fill = result), stat = "identity", width = 0.6) + 
   coord_flip() +
   guides(fill = guide_legend(reverse = TRUE)) +
-  labs(title   = "Issues With The Largest Response",
+  labs(title   = "Greatest Response Issues",
        caption = paste("Last updated:", updated),
        y       = "Attempted Calls") + 
   scale_fill_manual(values = c('red', 'lightblue', 'blue')) + 
