@@ -24,12 +24,11 @@ rm(callsdb, sqlite) # original database can be removed from memory
 
 # TRANSFORM
 calls$time <- as.POSIXct(as.numeric(as.character(calls$time)),
-                         origin = "1970-01-01", tz = "UTC")
+                 origin = "1970-01-01", tz = "UTC")
 
 # convert time into PST
 calls$time <- as.POSIXct(format(calls$time, 
-                                tz    = "America/Los_Angeles", 
-                                usetz = TRUE))
+                 tz = "America/Los_Angeles", usetz = TRUE))
 
 # break out date-time components
 calls$date  <- as.Date(as.POSIXct(calls$time))
@@ -38,7 +37,7 @@ calls$week  <- week(calls$time)
 calls$day   <- wday(calls$time, label = TRUE)
 calls$hour  <- hour(calls$time)
 
-# merge issues list from airtable
+# load issues list from airtable
 base   <- Sys.getenv("5C_AIRTABLE_BASE")
 issues <- air_select(base, "Issues List")
 rm(base) # no longer needed
@@ -46,6 +45,7 @@ rm(base) # no longer needed
 issues <- issues %>%
   select(issueID = id, issueName = Name, issueHidden = Inactive, issueCreated = createdTime)
 
+# merge airtable issues
 calls <- calls %>%
   left_join(x = calls, y = issues, by = "issueID")
 

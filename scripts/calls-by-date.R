@@ -3,6 +3,7 @@
 library(tidyverse)
 library(scales)
 
+# summarize calls by date
 date_trend <- calls %>%
   group_by(date, result) %>%
   summarize(calls = sum(calls)) %>%

@@ -3,7 +3,7 @@
 library(tidyverse)
 library(scales)
 
-
+# tranform data for chart
 hour_trend <- calls %>%
   filter(date > "2017-01-24" & result %in% c("contacted", "unavailable", "vm")) %>%
   group_by(hour, result) %>%
